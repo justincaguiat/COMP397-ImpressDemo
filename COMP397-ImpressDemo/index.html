@@ -1,14 +1,46 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Impress Demo</title>
     <!--CSS Section-->
     <link href="css/game.css" rel="stylesheet" />
-</head>
-<body>
+    <link href="css/reset.css" rel="stylesheet" />
 
+</head>
+<body onload="main();">
+
+    <!-- Shorthand div#impress>div#1.step_slide>div.slide_text-->
+
+    <div id="impress">
+        <!--FIRST SLIDE-->
+        <div id="1" class="step slide">
+            <div class="slide-text">
+                <p>There;s a time machine over there. Flip the switch?</p>
+                <p><a href="#2">FLIP</a></p>
+                <p><a href="#3">WAIT</a>for your dad, who is a scientest to come home</p>
+            </div>
+        </div>
+        <!--SECOND SLIDE-->
+        <div id="2" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p>You went back in time it was fun </p>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>
+        </div>
+        <!--THIRD SLIDE-->
+        <div id="3" class="step slide" data-x="-1500">
+            <div class="slide-text">
+                <p>You waited for your dad and he didn't want to go back through tim. </p>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>
+        </div>
+
+
+
+
+    </div>
 
     <!--JavaScript Section-->
     <script src="Scripts/lib/impress.js"></script>
